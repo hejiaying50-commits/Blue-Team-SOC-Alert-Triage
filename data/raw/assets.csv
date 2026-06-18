@@ -1,0 +1,5 @@
+﻿asset_id,asset_name,ip,system_type,business_level,owner,exposure
+AST-001,Web-Server-01,192.168.10.10,Nginx Web,core,Web Team,public
+AST-002,Login-Server-01,192.168.10.20,Auth Service,core,IAM Team,public
+AST-003,DB-Server-01,192.168.10.30,MySQL,high,DBA Team,internal
+AST-004,OA-System-01,192.168.10.40,OA System,high,Office IT,public
