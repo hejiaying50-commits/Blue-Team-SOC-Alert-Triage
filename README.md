@@ -285,44 +285,6 @@ streamlit run dashboard/app.py
 - `reports/daily_security_report.xlsx`
 - `reports/incident_report.md`
 
-## 仪表盘截图位置说明
-
-建议保留以下截图用于 GitHub 首屏展示：
-
-- `screenshots/dashboard_overview.png`
-- `screenshots/high_risk_incidents.png`
-
-## GitHub 展示建议
-
-- 将该项目作为单独仓库上传，避免和其他练习项目混在一起。
-- 在仓库右侧 About 区域填写英文一句话简介。
-- 添加 `blue-team`、`soc`、`cybersecurity`、`incident-response`、`streamlit` 等 Topics。
-- 把本仓库 Pin 到 GitHub 个人主页。
-- README 首屏保留仪表盘截图和一句话项目价值描述。
-
-更多上传建议见 [GITHUB_SHOWCASE_GUIDE.md](GITHUB_SHOWCASE_GUIDE.md)。
-
-## 简历写法
-
-推荐简历描述：
-
-> 独立设计并实现 Blue-Team-SOC-Alert-Triage 蓝队 SOC 告警研判平台，基于 Python、pandas、YAML 和 Streamlit 对 Web 访问日志、认证失败日志和 Suricata IDS 告警进行统一解析、规则检测、风险评分和事件聚合；构建 SQL 注入、XSS、敏感文件探测、目录扫描、爆破登录等检测逻辑，自动输出安全值守日报、单事件应急响应报告和安全态势仪表盘。
-
-2 行压缩版：
-
-> 使用 Python 构建本地化 SOC 告警研判平台，对 Web/Auth/IDS 多源日志进行标准化、检测、评分和事件聚合。  
-> 实现安全日报、应急响应报告与 Streamlit 仪表盘输出，用于展示蓝队日志分析与安全运营能力。
-
-## 面试讲解稿
-
-面试时可以按这个结构讲：
-
-1. 这个项目模拟 SOC 蓝队值守场景，目标是体现完整的告警研判闭环，而不只是规则命中。
-2. 我先本地生成 Web、认证和 Suricata 三类日志，并补齐资产清单，保证项目离线可复现。
-3. 我把多源日志统一成标准事件模型，便于做跨源规则检测和资产关联分析。
-4. 检测部分设计了关键词规则、频率规则和 IDS 严重级规则，覆盖 SQL 注入、XSS、敏感文件探测、目录扫描和弱口令爆破。
-5. 为了更贴近真实研判，我设计了风险评分模型，引入资产重要性、暴露面、状态码和扫描器指纹等因素。
-6. 最后按源 IP、目标资产、攻击类型和时间窗口聚合事件，并自动输出日报、事件报告和态势仪表盘。
 
 ## 安全声明
 
